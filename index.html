@@ -7,10 +7,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-   <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-   <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+   <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css">
+   <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
    <link rel="stylesheet" type="text/css" href="css/style.css">
    <link rel="stylesheet" type="text/css" href="css/responsive.css">
    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
@@ -126,50 +124,47 @@
          </div>
       </div>
    </section>
-<!-- banner end  -->
+   <!-- banner end  -->
 
-   <!--banners-slider-->
+   <!-- gallery slider start  -->
 
-   <section class="bnr_slider">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-sm-12 col-md-12">
-               <div class="bnr_slider_main">
-                  <div class="owl-carousel bnr_slide">
-                     <div class="slide">
-                        <img src="images/bnrslide1.png" class="img-fluid" alt="bnrslide1">
-                     </div>
-                     <div class="slide">
-                        <img src="images/bnrslide2.png" class="img-fluid" alt="bnrslide1">
-                     </div>
-                     <div class="slide">
-                        <img src="images/bnrslide3.png" class="img-fluid" alt="bnrslide1">
-                     </div>
-                     <div class="slide">
-                        <img src="images/bnrslide4.png" class="img-fluid" alt="bnrslide1">
-                     </div>
-                     <div class="slide">
-                        <img src="images/bnrslide5.png" class="img-fluid" alt="bnrslide1">
-                     </div>
-                     <div class="slide">
-                        <img src="images/bnrslide6.png" class="img-fluid" alt="bnrslide1">
-                     </div>
-                     <div class="slide">
-                        <img src="images/bnrslide7.png" class="img-fluid" alt="bnrslide1">
-                     </div>
-                     <div class="slide">
-                        <img src="images/bnrslide8.png" class="img-fluid" alt="bnrslide1">
-                     </div>
-                     <div class="slide">
-                        <img src="images/bnrslide9.png" class="img-fluid" alt="bnrslide1">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+   <div id="gallery">
+      <div class="gallery-inner">
+         <img src="images/bnrslide1.png" class="img-fluid" alt="bnrslide1">
       </div>
-   </section>
+      <div class="gallery-inner">
+         <img src="images/bnrslide2.png" class="img-fluid" alt="bnrslide1">
+      </div>
+      <div class="gallery-inner">
+         <img src="images/bnrslide3.png" class="img-fluid" alt="bnrslide1">
+      </div>
+      <div class="gallery-inner">
 
+         <img src="images/bnrslide4.png" class="img-fluid" alt="bnrslide1">
+      </div>
+      <div class="gallery-inner">
+
+         <img src="images/bnrslide5.png" class="img-fluid" alt="bnrslide1">
+      </div>
+      <div class="gallery-inner">
+
+         <img src="images/bnrslide6.png" class="img-fluid" alt="bnrslide1">
+      </div>
+      <div class="gallery-inner">
+
+         <img src="images/bnrslide7.png" class="img-fluid" alt="bnrslide1">
+      </div>
+      <div class="gallery-inner">
+
+         <img src="images/bnrslide8.png" class="img-fluid" alt="bnrslide1">
+      </div>
+      <div class="gallery-inner">
+
+         <img src="images/bnrslide9.png" class="img-fluid" alt="bnrslide1">
+      </div>
+   </div>
+
+   <!-- gallery slider end  -->
    <!--future ready start-->
    <section class="future_ready">
       <div class="container">
@@ -179,7 +174,8 @@
                   <div class="future_ready_left">
                      <div class="future_ready_content">
                         <h2 class="section-heading">Be Future-Ready With Our Cutting-Edge Research and Events</h2>
-                        <p>Our expertise lies in understanding the specific requirements and barriers that affect teams and
+                        <p>Our expertise lies in understanding the specific requirements and barriers that affect teams
+                           and
                            executives.</p>
                         <p>Leveraging this insight through local research led by our analysts, we extend our educational
                            efforts to major audiences across the region. By doing so, we empower businesses to identify
@@ -202,94 +198,139 @@
          </div>
       </div>
    </section>
-<!--future ready end-->
-<!-- confrences start  -->
-<section class="confrences">
-   <div class="container">
-      <div class="confrences-wrap">
-         <div class="grid grid-cols-3">
-            <div class="grid-item">
-               <div class="confrences-card">
-                  <h4>Summits & Conferences</h4>
-                  <p>Large scale gatherings targeted for business leaders</p>
-                  <a href="#"><img src="images/right-arrow.svg" alt="right-arrow"></a>
-               </div>
+   <!--future ready end-->
+   <!-- confrences start  -->
+   <section class="confrences">
+      <div class="container">
+         <div class="confrences-wrap">
+            <div class="tabs">
+               <ul id="tabs-nav">
+                  <li>
+                     <a href="#tab1">
+                        <div class="confrences-card">
+                           <h4>Summits & Conferences</h4>
+                           <p>Large scale gatherings targeted for business leaders</p>
+                           <a href="#" class="card-arrow"><img src="images/right-arrow.svg" alt="right-arrow"></a>
+                        </div>
+                     </a>
+                  </li>
+                  <div id="tabs-content">
+                     <div id="tab1" class="tab-content">
+                        <div class="confrences-card">
+                           <figure>
+                              <img src="images/conferences-img.png" alt="conferences-img">
+                           </figure>
+                        </div>
+                     </div>
+                     <div id="tab2" class="tab-content">
+                        <div class="confrences-card">
+                           <figure>
+                              <img src="images/conferences-img.png" alt="conferences-img">
+                           </figure>
+                        </div>
+                     </div>
+                     <div id="tab3" class="tab-content">
+                        <div class="confrences-card">
+                           <figure>
+                              <img src="images/conferences-img.png" alt="conferences-img">
+                           </figure>
+                        </div>
+                     </div>
+                     <div id="tab4" class="tab-content">
+                        <div class="confrences-card">
+                           <figure>
+                              <img src="images/conferences-img.png" alt="conferences-img">
+                           </figure>
+                        </div>
+                     </div>
+                  </div> <!-- END tabs-content -->
+                  <li>
+                     <a href="#tab2">
+                        <div class="confrences-card">
+                           <h4>Summits & Conferences</h4>
+                           <p>Large scale gatherings targeted for business leaders</p>
+                           <a href="#" class="card-arrow"><img src="images/right-arrow.svg" alt="right-arrow"></a>
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#tab3">
+                        <div class="confrences-card">
+                           <h4>Summits & Conferences</h4>
+                           <p>Large scale gatherings targeted for business leaders</p>
+                           <a href="#" class="card-arrow"><img src="images/right-arrow.svg" alt="right-arrow"></a>
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#tab4">
+                        <div class="confrences-card">
+                           <h4>Summits & Conferences</h4>
+                           <p>Large scale gatherings targeted for business leaders</p>
+                           <a href="#" class="card-arrow"><img src="images/right-arrow.svg" alt="right-arrow"></a>
+                        </div>
+                     </a>
+                  </li>
+               </ul> <!-- END tabs-nav -->
+
+            </div> <!-- END tabs -->
+           
+            <div class="confrences-btn">
+               <a href="#" class="primary-btn">Speak to Our Team</a>
             </div>
-            <div class="grid-item">
-               <div class="confrences-card">
-                  <figure>
-                     <img src="images/conferences-img.png" alt="conferences-img">
-                  </figure>
-               </div>
-            </div>
-            <div class="grid-item">
-               <div class="confrences-card">
-                  <h4>Summits & Conferences</h4>
-                  <p>Large scale gatherings targeted for business leaders</p>
-                  <a href="#"><img src="images/right-arrow.svg" alt="right-arrow"></a>
-               </div>
-            </div>
-            <div class="grid-item">
-               <div class="confrences-card">
-                  <h4>Summits & Conferences</h4>
-                  <p>Large scale gatherings targeted for business leaders</p>
-                  <a href="#"><img src="images/right-arrow.svg" alt="right-arrow"></a>
-               </div>
-            </div>
-            <div class="grid-item">
-               <div class="confrences-card">
-                  <h4>Summits & Conferences</h4>
-                  <p>Large scale gatherings targeted for business leaders</p>
-                  <a href="#"><img src="images/right-arrow.svg" alt="right-arrow"></a>
-               </div>
-            </div>
-         </div>
-         <div class="confrences-btn">
-            <a href="#" class="primary-btn">Speak to Our Team</a>
          </div>
       </div>
-   </div>
-</section>
-<!-- confrences end  -->
-<!-- upcoming-events start -->
-<section class="upcoming-events">
-   <div class="container">
-      <h2 class="section-heading">Upcoming Events</h2>
-      <p class="sub-heading">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  Lorem ipsum dolor sit amet.</p>
-      <div class="upcoming-events-wrap">
-         <div class="grid grid-cols-3">
-            <div class="items">
-               <div class="upcoming-events-card">
+   </section>
+   <!-- confrences end  -->
+   <!-- upcoming-events start -->
+   <section class="upcoming-events">
+      <div class="container">
+         <h2 class="section-heading">Upcoming Events</h2>
+         <p class="sub-heading">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, Lorem ipsum dolor sit amet.</p>
+         <div class="upcoming-events-wrap">
+            <div class="grid grid-cols-3">
+               <div class="items">
+                  <div class="upcoming-events-card">
                      <div class="month-date">
-                       <span>sep</span>
-                       <p>06</p>
+                        <span>sep</span>
+                        <p>06</p>
                      </div>
                      <div class="bg-img">
                         <img src="images/event-img-1.png" alt="event-img-1">
                      </div>
                      <div class="upcoming-events-content">
                         <img src="images/event-logo-1.svg" alt="event-img-1">
-                        <p><strong>Navigating Contractor Compliance:</strong> Overcoming Development and Technology Pitfalls</p>
+                        <p><strong>Navigating Contractor Compliance:</strong> Overcoming Development and Technology
+                           Pitfalls</p>
+                        <div class="hover-content">
+                           <h4>12th september 2023 </h4>
+                           <p>sydney, Australia</p>
+                        </div>
                      </div>
+                  </div>
                </div>
-            </div>
-            <div class="items">
-               <div class="upcoming-events-card">
-                  <div class="month-date">
-                     <span>sep</span>
-                     <p>12</p>
-                   </div>
+               <div class="items">
+                  <div class="upcoming-events-card">
+                     <div class="month-date">
+                        <span>sep</span>
+                        <p>12</p>
+                     </div>
                      <div class="bg-img">
                         <img src="images/event-img-2.png" alt="event-img-2">
                      </div>
                      <div class="upcoming-events-content">
                         <img src="images/event-logo-2.svg" alt="event-img-2">
                         <p>Managing and Securing Changes in The New Digital Workplace</p>
+                        <div class="hover-content">
+                           <h4>12th september 2023 </h4>
+                           <p>sydney, Australia</p>
+                        </div>
                      </div>
+                  </div>
                </div>
-            </div>
-            <div class="items">
-               <div class="upcoming-events-card">
+               <div class="items">
+                  <div class="upcoming-events-card">
                      <div class="bg-img">
                         <img src="images/event-img-1.png" alt="event-img-3">
                      </div>
@@ -297,403 +338,401 @@
                         <img src="images/event-logo-3.svg" alt="event-img-3">
                         <p>Maximising the Value
                            of Cybersecurity Investments</p>
-                     </div>
-               </div>
-            </div>
-         </div>
-         <div class="upcoming-events-btn">
-            <a href="#" class="primary-btn">See All Events</a>
-         </div>
-      </div>
-   </div>
-   <div class="left-circle">
-      <img src="images/circle-left.png" alt="circle-left">
-   </div>
-   <div class="right-circle">
-      <img src="images/circle-right.png" alt="circle-right">
-   </div>
-</section>
-<!-- upcoming-events end  -->
-<!-- latest-resources start  -->
-<section class="latest-resources">
-   <div class="container">
-      <h2 class="section-heading">Latest Resources</h2>
-      <p class="sub-heading">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-      <div class="latest-resources-wrap">
-         <h4 class="border-heading">Reports</h4>
-         <div class="resources-slider-main">
-            <div class="owl-carousel resources-slider">
-               <div class="slide">
-                  <img src="images/slider-top-img.png" id="sldier-active-img" alt="slider-top-img">
-                  <div class="resources-slider-card">
-                     <img src="images/cover-reporrt.svg" class="img-fluid" alt="cover-reporrt">
-                     <h4>Leading contractor compliance priority</h4>
-                     <p>Lorem ipsum dolor sit amet, 
-                        consetetur sadipscing elitr, 
-                        sed diam nonumy eirmod 
-                        tempor invidunt.</p>
-                  </div>
-               </div>
-               <div class="slide">
-                  <img src="images/slider-top-img.png" id="sldier-active-img" alt="slider-top-img">
-                  <div class="resources-slider-card">
-                     <img src="images/cover-reporrt.svg" class="img-fluid" alt="cover-reporrt">
-                     <h4>Leading contractor compliance priority</h4>
-                     <p>Lorem ipsum dolor sit amet, 
-                        consetetur sadipscing elitr, 
-                        sed diam nonumy eirmod 
-                        tempor invidunt.</p>
-                  </div>
-               </div>
-               <div class="slide">
-                  <img src="images/slider-top-img.png" id="sldier-active-img" alt="slider-top-img">
-                  <div class="resources-slider-card">
-                     <img src="images/cover-reporrt.svg" class="img-fluid" alt="cover-reporrt">
-                     <h4>Leading contractor compliance priority</h4>
-                     <p>Lorem ipsum dolor sit amet, 
-                        consetetur sadipscing elitr, 
-                        sed diam nonumy eirmod 
-                        tempor invidunt.</p>
-                  </div>
-               </div>
-              
-            </div>
-            <a href="#" class="primary-btn">More Reports</a>
-         </div>
-         <h4 class="border-heading">Video Content</h4>
-      </div>
-   </div>
-   <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
-  </svg>
-</section>
-<!-- latest-resources end  -->
-<section class="video-content">
-   <div class="container">
-      <div class="video-content-wrap">
-         <div class="grid grid-cols-2">
-            <div class="items">
-               <div class="video-content-card">
-                  <div class="video-card-media">
-                     <img src="images/video-card-1.png" alt="video-card-1">
-                     <a href="#" class="primary-btn">14 September 2023</a>
-                  </div>
-                  <div class="video-card-content">
-                     <p>How do you keep up to date with technology innovations and keep your organisation up to date with new technologies without disruption?</p>
-                     <span>Matthew Thomas</span>
-                     <h4>CEO Safety APAC, Kraft Heinz</h4>
-                  </div>
-               </div>
-               
-            </div>
-            <div class="items">
-               <div class="video-content-card">
-                  <div class="video-card-media">
-                     <img src="images/video-card-2.png" alt="video-card-2">
-                     <a href="#" class="primary-btn">14 September 2023</a>
-                  </div>
-                  <div class="video-card-content">
-                     <p>How do you keep up to date with technology innovations and keep your organisation up to date with new technologies without disruption?</p>
-                     <span>Matthew Thomas</span>
-                     <h4>CEO Safety APAC, Kraft Heinz</h4>
-                  </div>
-               </div>
-               
-            </div>
-            <div class="items">
-               <div class="video-content-card">
-                  <div class="video-card-media">
-                     <img src="images/video-card-3.png" alt="video-card-3">
-                     <a href="#" class="primary-btn">14 September 2023</a>
-                  </div>
-                  <div class="video-card-content">
-                     <p>How do you keep up to date with technology innovations and keep your organisation up to date with new technologies without disruption?</p>
-                     <span>Matthew Thomas</span>
-                     <h4>CEO Safety APAC, Kraft Heinz</h4>
-                  </div>
-               </div>
-               
-            </div>
-            <div class="items">
-               <div class="video-content-card">
-                  <div class="video-card-media">
-                     <img src="images/video-card-4.png" alt="video-card-4">
-                     <a href="#" class="primary-btn">14 September 2023</a>
-                  </div>
-                  <div class="video-card-content">
-                     <p>How do you keep up to date with technology innovations and keep your organisation up to date with new technologies without disruption?</p>
-                     <span>Matthew Thomas</span>
-                     <h4>CEO Safety APAC, Kraft Heinz</h4>
-                  </div>
-               </div>
-               
-            </div>
-         </div>
-      </div>
-      <div class="video-content-btn">
-         <a href="#" class="primary-btn">See All Latest Research</a>
-      </div>
-   </div>
-   <div class="custom-shape-divider-bottom-1701939947">
-     
-  </div>
-  <div class="left-circle">
-   <img src="images/circle-left.png" alt="circle-left">
-</div>
-</section>
-<!-- local-research start  -->
-<section class="local-research">
-   <div class="container">
-      <div class="local-research-wrap">
-         <div class="local-research-content">
-            <div class="grid ">
-               <div class="items">
-                  <div class="local-research-card">
-                     <h2 class="section-heading">Broaden Your
-                        Knowledge
-                        Through Our
-                        Local Research</h2>
-                        <p class="sub-heading">Sign up to our newsletter to receive the latest, research, news, videos, interviews and more, dispensed directly from our analysts that are industry and country curated.</p>
-                  </div>
-               </div>
-               <div class="items">
-                  <div class="local-research-card-img">
-                     <div class="img-sec">
-                        <img src="images/newsletter-1.png" alt="newsletter-1">
-                        <img src="images/newsletter-2.png" alt="newsletter-2">
+                        <div class="hover-content">
+                           <h4>12th september 2023 </h4>
+                           <p>sydney, Australia</p>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
-         <div class="local-research-btn">
-            <a href="#" class="primary-btn">Sign Up to Newsletter</a>
+            <div class="upcoming-events-btn">
+               <a href="#" class="primary-btn">See All Events</a>
+            </div>
          </div>
       </div>
-   </div>
-</section>
-<!-- local-research end  -->
-<div class="parallax-sec">
-   <!-- <img src="images/parallax-img.png" alt="parallax-img"> -->
-</div>
-<!-- trusted-brands start  -->
-<section class="trusted-brands">
-   <div class="container-fluid">
-      <div class="trusted-brands-wrap">
-         <div class="grid grid-cols-2">
-            <div class="items">
-               <div class="trusted-brands-content">
-                  <h2 class="section-heading">Trusted by Brands Reshaping the Future</h2>
-                  <p class="sub-heading">
-                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-                  </p>
-               </div>
-            </div>
-            <div class="items">
-               <div class="trusted-brands-img">
-                  <div class="grid grid-cols-3">
-                     <div class="items">
-                        <img src="images/brand-1.png" alt="brand-1">
-                        <img src="images/brand-2.png" alt="brand-2">
-                        <img src="images/brand-3.png" alt="brand-3">
-                        <img src="images/brand-4.png" alt="brand-4">
-                        <img src="images/brand-5.png" alt="brand-5">
+      <div class="left-circle">
+         <img src="images/circle-left.png" alt="circle-left">
+      </div>
+      <div class="right-circle">
+         <img src="images/circle-right.png" alt="circle-right">
+      </div>
+   </section>
+   <!-- upcoming-events end  -->
+   <!-- latest-resources start  -->
+   <section class="latest-resources">
+      <div class="container">
+         <h2 class="section-heading">Latest Resources</h2>
+         <p class="sub-heading">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr.</p>
+         <div class="latest-resources-wrap">
+            <h4 class="border-heading">Reports</h4>
+            <div class="resources-slider-main">
+               <div class="wrapper">
+                  <div class="center-slider">
+                     <div>
+                        <div class="slider-main">
+                           <img src="images/slider-top-img.png" class="sldier-active-img" alt="slider-top-img">
+                           <div class="resources-slider-card">
+                              <img src="images/cover-reporrt.svg" class="img-fluid" alt="cover-reporrt">
+                              <h4>Leading contractor compliance priority</h4>
+                              <p>Lorem ipsum dolor sit amet,
+                                 consetetur sadipscing elitr,
+                                 sed diam nonumy eirmod
+                                 tempor invidunt.</p>
+                           </div>
+                        </div>
                      </div>
-                     <div class="items">
-                        <img src="images/brand-6.png" alt="brand-6">
-                        <img src="images/brand-7.png" alt="brand-7">
-                        <img src="images/brand-8.png" alt="brand-8">
-                        <img src="images/brand-9.png" alt="brand-9">
-                        <img src="images/brand-10.png" alt="brand-10">
+                     <div>
+                        <div class="slider-main">
+                           <img src="images/slider-top-img.png" class="sldier-active-img" alt="slider-top-img">
+                           <div class="resources-slider-card">
+                              <img src="images/cover-reporrt.svg" class="img-fluid" alt="cover-reporrt">
+                              <h4>Leading contractor compliance priority</h4>
+                              <p>Lorem ipsum dolor sit amet,
+                                 consetetur sadipscing elitr,
+                                 sed diam nonumy eirmod
+                                 tempor invidunt.</p>
+                           </div>
+                        </div>
                      </div>
-                     <div class="items">
-                        <img src="images/brand-11.png" alt="brand-11">
-                        <img src="images/brand-12.png" alt="brand-12">
-                        <img src="images/brand-13.png" alt="brand-13">
-                        <img src="images/brand-14.png" alt="brand-14">
-                        <img src="images/brand-15.png" alt="brand-15">
+                     <div>
+                        <div class="slider-main">
+                           <img src="images/slider-top-img.png" class="sldier-active-img" alt="slider-top-img">
+                           <div class="resources-slider-card">
+                              <img src="images/cover-reporrt.svg" class="img-fluid" alt="cover-reporrt">
+                              <h4>Leading contractor compliance priority</h4>
+                              <p>Lorem ipsum dolor sit amet,
+                                 consetetur sadipscing elitr,
+                                 sed diam nonumy eirmod
+                                 tempor invidunt.</p>
+                           </div>
+                        </div>
                      </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!-- trusted-brands end  -->
-<!-- increase-speed-sec start  -->
-<section class="increase-speed-sec">
-   <div class="container">
-      <div class="increase-speed-wrap">
-         <div class="grid grid-cols-2">
-            <div class="items">
-               <h2>Increase the Speed of
-                  Your Business Growth</h2>
-            </div>
-            <div class="items">
-            <a href="#" class="primary-btn">Speak to our Team</a>
-               
-            </div>
-         </div>
-         
-      </div>
-   </div>
-</section>
-<!-- increase-speed-sec end  -->
-<!-- footer start  -->
-<footer class="site-footer">
-   <div class="container">
-      <div class="site-footer-wrap">
-         <div class="footer-top">
-            <div class="grid grid-cols-4">
-               <div class="items">
-                  <div class="research-advisory">
-                     <h4>RESEARCH & ADVISORY</h4>
-                     <h4>EVENTS</h4>
-                     <ul>
-                        <li><a href="#">Upcoming Events</a></li>
-                        <li><a href="#">Private Events</a></li>
-                        <li><a href="#">Summits & Conferences</a></li>
-                        <li><a href="#">Executive Society</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="items">
-                  <div class="footer-resources">
-                     <h4>RESOURCES</h4>
-                     <ul>
-                        <li><a href="#">Latest Insights</a></li>
-                        <li><a href="#">Whitepapers</a></li>
-                        <li><a href="#">Visionary Chronicles</a></li>
-                        <li><a href="#">Client Success Stories</a></li>
-                        <li><a href="#">Analyst Videos</a></li>
-                        <li><a href="#">Blog</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="items">
-                  <div class="footer-compant">
-                     <h4>COMPANY</h4>
-                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Executive Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Newsroom</a></li>
-                        <li><a href="#">Contact</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="items">
-                  <div class="footer-social">
-                     <ul>
-                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="footer-center">
-            <h4>CONTACT</h4>
-            <div class="address">
-               <div class="grid grid-cols-4">
-                  
-                  <div class="items">
-                     <a href="tel:+61281888535">+61 2 8188 8535</a>
-                     <a href="mailto:info@focusnetwork.co">info@focusnetwork.co</a>
-                  </div>
-                  <div class="items">
-                     <h5>Australia</h5>
-                     <ul>
-                        <li><a href="#">Level 2,</a></li>
-                        <li><a href="#">146 Arthur Street,</a></li>
-                        <li><a href="#">North Sydney,</a></li>
-                        <li><a href="#">NSW 2060, Australia</a></li>
-                     </ul>
-                  </div>
-                  <div class="items">
-                     <h5>Singapore</h5>
-                     <ul>
-                        <li><a href="#">Level 24,</a></li>
-                        <li><a href="#">Capita Green,</a></li>
-                        <li><a href="#">138 Market Street,</a></li>
-                        <li><a href="#">Singapore</a></li>
-                     </ul>
-                  </div>
-                  <div class="items">
-                     <h5>USA</h5>
-                     <ul>
-                        <li><a href="#">Suite 2710</a></li>
-                        <li><a href="#">101 California Street,</a></li>
-                        <li><a href="#">San Francisco CA 94111</a></li>
-                        <li><a href="#">USA</a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="footer-bottom">
-            <a href="#"><img src="images/logo.svg" alt="logo"></a>
-            <p>@2023 Focus Network, All Rights Reserved.</p>
-         </div>
-      </div>
-   </div>
-</footer>
-<!-- footer end  -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-   <script src="js/custom.js"></script>
-   <script>
-       $('.bnr_slide').owlCarousel({
-   loop: true,
-   margin: 10,
-   responsiveClass: true,
-   dots: false,
-   responsive: {
-      0: {
-         items: 1,
-         nav: false
-      },
-      600: {
-         items: 5,
-         nav: false
-      },
-      1000: {
-         items: 9,
-         nav: false,
-         loop: true
-      }
-   }
-})
+                     <div>
+                        <div class="slider-main">
+                           <img src="images/slider-top-img.png" class="sldier-active-img" alt="slider-top-img">
+                           <div class="resources-slider-card">
+                              <img src="images/cover-reporrt.svg" class="img-fluid" alt="cover-reporrt">
+                              <h4>Leading contractor compliance priority</h4>
+                              <p>Lorem ipsum dolor sit amet,
+                                 consetetur sadipscing elitr,
+                                 sed diam nonumy eirmod
+                                 tempor invidunt.</p>
+                           </div>
+                        </div>
+                     </div>
 
-$('.resources-slider').owlCarousel({
-   loop: true,
-   margin: 40,
-   responsiveClass: true,
-   dots: false,
-   // autoplay: true,
-  center: true,
-   responsive: {
-      0: {
-         items: 1,
-         nav: true
-      },
-      600: {
-         items: 3,
-         nav: true
-      },
-      1000: {
-         items: 3,
-         nav: true,
-         loop: true
-      }
-   }
-})
-   
-   </script>
+                  </div>
+               </div>
+               <a href="#" class="primary-btn">More Reports</a>
+            </div>
+            <h4 class="border-heading">Video Content</h4>
+         </div>
+      </div>
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+         <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+            class="shape-fill"></path>
+      </svg>
+   </section>
+   <!-- latest-resources end  -->
+   <section class="video-content">
+      <div class="container">
+         <div class="video-content-wrap">
+            <div class="grid grid-cols-2">
+               <div class="items">
+                  <div class="video-content-card">
+                     <div class="video-card-media">
+                        <img src="images/video-card-1.png" alt="video-card-1">
+                        <a href="#" class="primary-btn">14 September 2023</a>
+                     </div>
+                     <div class="video-card-content">
+                        <p>How do you keep up to date with technology innovations and keep your organisation up to date
+                           with new technologies without disruption?</p>
+                        <span>Matthew Thomas</span>
+                        <h4>CEO Safety APAC, Kraft Heinz</h4>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="items">
+                  <div class="video-content-card">
+                     <div class="video-card-media">
+                        <img src="images/video-card-2.png" alt="video-card-2">
+                        <a href="#" class="primary-btn">14 September 2023</a>
+                     </div>
+                     <div class="video-card-content">
+                        <p>How do you keep up to date with technology innovations and keep your organisation up to date
+                           with new technologies without disruption?</p>
+                        <span>Matthew Thomas</span>
+                        <h4>CEO Safety APAC, Kraft Heinz</h4>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="items">
+                  <div class="video-content-card">
+                     <div class="video-card-media">
+                        <img src="images/video-card-3.png" alt="video-card-3">
+                        <a href="#" class="primary-btn">14 September 2023</a>
+                     </div>
+                     <div class="video-card-content">
+                        <p>How do you keep up to date with technology innovations and keep your organisation up to date
+                           with new technologies without disruption?</p>
+                        <span>Matthew Thomas</span>
+                        <h4>CEO Safety APAC, Kraft Heinz</h4>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="items">
+                  <div class="video-content-card">
+                     <div class="video-card-media">
+                        <img src="images/video-card-4.png" alt="video-card-4">
+                        <a href="#" class="primary-btn">14 September 2023</a>
+                     </div>
+                     <div class="video-card-content">
+                        <p>How do you keep up to date with technology innovations and keep your organisation up to date
+                           with new technologies without disruption?</p>
+                        <span>Matthew Thomas</span>
+                        <h4>CEO Safety APAC, Kraft Heinz</h4>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+         <div class="video-content-btn">
+            <a href="#" class="primary-btn">See All Latest Research</a>
+         </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1701939947">
+
+      </div>
+      <div class="left-circle">
+         <img src="images/circle-left.png" alt="circle-left">
+      </div>
+   </section>
+   <!-- local-research start  -->
+   <section class="local-research">
+      <div class="container">
+         <div class="local-research-wrap">
+            <div class="local-research-content">
+               <div class="grid ">
+                  <div class="items">
+                     <div class="local-research-card">
+                        <h2 class="section-heading">Broaden Your
+                           Knowledge
+                           Through Our
+                           Local Research</h2>
+                        <p class="sub-heading">Sign up to our newsletter to receive the latest, research, news, videos,
+                           interviews and more, dispensed directly from our analysts that are industry and country
+                           curated.</p>
+                     </div>
+                  </div>
+                  <div class="items">
+                     <div class="local-research-card-img">
+                        <div class="img-sec">
+                           <img src="images/newsletter-1.png" alt="newsletter-1">
+                           <img src="images/newsletter-2.png" alt="newsletter-2">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="local-research-btn">
+               <a href="#" class="primary-btn">Sign Up to Newsletter</a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- local-research end  -->
+   <div class="parallax-sec">
+      <!-- <img src="images/parallax-img.png" alt="parallax-img"> -->
+   </div>
+   <!-- trusted-brands start  -->
+   <section class="trusted-brands">
+      <div class="container-fluid">
+         <div class="trusted-brands-wrap">
+            <div class="grid grid-cols-2">
+               <div class="items">
+                  <div class="trusted-brands-content">
+                     <h2 class="section-heading">Trusted by Brands Reshaping the Future</h2>
+                     <p class="sub-heading">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr.
+                     </p>
+                  </div>
+               </div>
+               <div class="items">
+                  <div class="trusted-brands-img">
+                     <div class="grid grid-cols-3">
+                        <div class="items">
+                           <img src="images/brand-1.png" alt="brand-1">
+                           <img src="images/brand-2.png" alt="brand-2">
+                           <img src="images/brand-3.png" alt="brand-3">
+                           <img src="images/brand-4.png" alt="brand-4">
+                           <img src="images/brand-5.png" alt="brand-5">
+                        </div>
+                        <div class="items">
+                           <img src="images/brand-6.png" alt="brand-6">
+                           <img src="images/brand-7.png" alt="brand-7">
+                           <img src="images/brand-8.png" alt="brand-8">
+                           <img src="images/brand-9.png" alt="brand-9">
+                           <img src="images/brand-10.png" alt="brand-10">
+                        </div>
+                        <div class="items">
+                           <img src="images/brand-11.png" alt="brand-11">
+                           <img src="images/brand-12.png" alt="brand-12">
+                           <img src="images/brand-13.png" alt="brand-13">
+                           <img src="images/brand-14.png" alt="brand-14">
+                           <img src="images/brand-15.png" alt="brand-15">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- trusted-brands end  -->
+   <!-- increase-speed-sec start  -->
+   <section class="increase-speed-sec">
+      <div class="container">
+         <div class="increase-speed-wrap">
+            <div class="grid grid-cols-2">
+               <div class="items">
+                  <h2>Increase the Speed of
+                     Your Business Growth</h2>
+               </div>
+               <div class="items">
+                  <a href="#" class="primary-btn">Speak to our Team</a>
+
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <div class="left-circle">
+         <img src="images/shape-layer-2.png" alt="shape-layer-2">
+      </div>
+   </section>
+   <!-- increase-speed-sec end  -->
+   <!-- footer start  -->
+   <footer class="site-footer">
+      <div class="container">
+         <div class="site-footer-wrap">
+            <div class="footer-top">
+               <div class="grid grid-cols-4">
+                  <div class="items">
+                     <div class="research-advisory">
+                        <h4>RESEARCH & ADVISORY</h4>
+                        <h4>EVENTS</h4>
+                        <ul>
+                           <li><a href="#">Upcoming Events</a></li>
+                           <li><a href="#">Private Events</a></li>
+                           <li><a href="#">Summits & Conferences</a></li>
+                           <li><a href="#">Executive Society</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="items">
+                     <div class="footer-resources">
+                        <h4>RESOURCES</h4>
+                        <ul>
+                           <li><a href="#">Latest Insights</a></li>
+                           <li><a href="#">Whitepapers</a></li>
+                           <li><a href="#">Visionary Chronicles</a></li>
+                           <li><a href="#">Client Success Stories</a></li>
+                           <li><a href="#">Analyst Videos</a></li>
+                           <li><a href="#">Blog</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="items">
+                     <div class="footer-compant">
+                        <h4>COMPANY</h4>
+                        <ul>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">Executive Team</a></li>
+                           <li><a href="#">Careers</a></li>
+                           <li><a href="#">Newsroom</a></li>
+                           <li><a href="#">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="items">
+                     <div class="footer-social">
+                        <ul>
+                           <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-center">
+               <h4>CONTACT</h4>
+               <div class="address">
+                  <div class="grid grid-cols-4">
+
+                     <div class="items">
+                        <a href="tel:+61281888535">+61 2 8188 8535</a>
+                        <a href="mailto:info@focusnetwork.co">info@focusnetwork.co</a>
+                     </div>
+                     <div class="items">
+                        <h5>Australia</h5>
+                        <p>Level 2,
+                           <br>
+                           146 Arthur Street,
+                           <br>
+                           North Sydney,
+                           <br>
+                           NSW 2060, Australia
+                        </p>
+                     </div>
+                     <div class="items">
+                        <h5>Singapore</h5>
+                        <p>Level 24,
+                           <br>
+                           Capita Green,
+                           <br>
+                           138 Market Street,
+                           <br>
+                           Singapore
+                        </p>
+                     </div>
+                     <div class="items">
+                        <h5>USA</h5>
+                        <p>Suite 2710
+                           <br>
+                           101 California Street,
+                           <br>
+                           San Francisco CA 94111
+                           <br>
+                           USA
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-bottom">
+               <a href="#"><img src="images/logo.svg" alt="logo"></a>
+               <p>@2023 Focus Network, All Rights Reserved.</p>
+            </div>
+         </div>
+      </div>
+      <div class="footer-circle">
+         <img src="images/footer-circle.png" alt="footer-circle">
+      </div>
+   </footer>
+   <!-- footer end  -->
+   <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+   <script src="js/custom.js"></script>
 </body>
 
 </html>

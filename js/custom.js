@@ -1,58 +1,98 @@
-function headersubmenu (){
 
-    // get all elements here now
-    const navMenuClose = document.getElementById("menu-close");
-    const sideMenuClose = document.getElementById("sidebar-close");
-    const links = document.querySelector("header .navbar .navbar-links");
-    const menuLi = document.querySelectorAll("header .navbar .navbar-links .links > li");
-    const submenu = document.querySelectorAll("header .navbar .navbar-links .links li ul > li");
-    navMenuClose.addEventListener("click", () => {
-       links.style.left = "0";
-    });
-    sideMenuClose.addEventListener("click", () => {
-       links.style.left = "-100%";
-    });
-    document.addEventListener("click", (event) => {
-       if (!links.contains(event.target) && !navMenuClose.contains(event.target)) {
-          links.style.left = "-100%";
+$(document).ready(function(){
+   $("#menu-close").click(function(){
+      $("body").addClass("toggle");
+   });
+});
+
+$(document).ready(function(){
+   $("#sidebar-close").click(function(){
+      $("body").removeClass("toggle");
+   });
+});
+
+
+$('.responsive').slick({
+   dots: true,
+   infinite: false,
+   speed: 300,
+   slidesToShow: 4,
+   slidesToScroll: 4,
+   responsive: [
+     {
+       breakpoint: 1024,
+       settings: {
+         slidesToShow: 3,
+         slidesToScroll: 3,
+         infinite: true,
+         dots: true
        }
-    });
-    menuLi.forEach((item) => {
-       item.addEventListener("click", (e) => {
-          menuLi.forEach((li) => {
-             li.classList.remove("active");
-          });
-          e.currentTarget.classList.toggle("active");
-       });
-    });
-    submenu.forEach((item) => {
-       item.addEventListener("click", (e) => {
-          e.currentTarget.classList.toggle("show-menu");
-       });
-    });
-    const navbar = document.querySelector("header");
-    const topMenu = document.querySelector(".top-menu");
-    window.addEventListener("scroll", () => {
-       const scrollHeight = window.scrollY;
-       const navbarHeight = navbar.getBoundingClientRect().height;
-       if (scrollHeight > navbarHeight) {
-          navbar.classList.add("nav-fix");
-       } else {
-          navbar.classList.remove("nav-fix");
+     },
+     {
+       breakpoint: 600,
+       settings: {
+         slidesToShow: 2,
+         slidesToScroll: 2
        }
-       console.log(scrollHeight);
-       if (scrollHeight > 200) {
-          topMenu.classList.add("show-btn");
-       } else {
-          topMenu.classList.remove("show-btn");
+     },
+     {
+       breakpoint: 480,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1
        }
-    });
-    topMenu.addEventListener("click", () => {
-       document.documentElement.scrollTop = 0;
-    });
- 
-}
+     }
+     // You can unslick at a given breakpoint now by adding:
+     // settings: "unslick"
+     // instead of a settings object
+   ]
+ });
 
-headersubmenu();
+ $(document).ready(function(){
+   $('.center-slider').slick({
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     centerMode: true,
+     arrows: true,
+     dots: false,
+     speed: 300,
+     centerPadding: '20px',
+     infinite: true,
+     autoplaySpeed: 5000,
+     autoplay: true
+   });
+ });
+
+ $('#gallery').slick({
+   slidesToShow: 8,
+   slidesToScroll: 1,
+   autoplay: true,
+   autoplaySpeed: 0,
+   speed: 1000,
+   pauseOnHover: false,
+   arrows: false,
+   cssEase: 'linear'
+ });
 
 
+ $(document).ready(function(){
+   $("#tabs-nav li").hover(function(){
+      $(this).toggleClass("hover-active");
+   });
+ });
+
+// Show the first tab and hide the rest
+$('#tabs-nav li:first-child').addClass('active');
+$('.tab-content').hide();
+$('.tab-content:first').show();
+
+// Click function
+$('#tabs-nav li').mouseenter(function(){
+  $('#tabs-nav li').removeClass('active');
+ // $(this).addClass('active');
+  $('.tab-content').hide();
+  
+  var activeTab = $(this).find('a').attr('href');
+  $(activeTab).fadeIn();
+  return false;
+});
